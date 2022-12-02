@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaHeart , FaRegHeart } from 'react-icons/fa'
 
 
+
 function Movie({movie , id}) {
 
     const [liked , setLiked] = useState(false)
