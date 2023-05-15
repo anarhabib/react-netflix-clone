@@ -21,12 +21,12 @@ const SavedMovies = () => {
 
     useEffect(() => {
         onSnapshot(doc(db, 'users', `${user?.email}`), (doc) => {
-            console.log(doc);
+          
           setMovies(doc.data()?.savedMovies);
         });
       },[user?.email]);
 
-      console.log(movies);
+     
 
     const movieRef = doc(db, 'users', `${user?.email}`)
 
